@@ -55,16 +55,29 @@ namespace Evaluación_2P
 
             private void LoadLastRecarga()
             {
-                // Implementar la lógica para cargar la última recarga desde el archivo y hacer binding
-                // Esto es solo un ejemplo, debes ajustar según tu lógica de datos
-                string fileName = $"{NameEntry.Text}.txt"; // Asegúrate de que el nombre se haya ingresado
+           
+                string fileName = $"{NameEntry.Text}.txt"; 
                 if (File.Exists(fileName))
                 {
                     var lastRecarga = File.ReadAllText(fileName);
-                    // Aquí puedes dividir la información y establecer el binding correspondiente
+                   
                     var data = lastRecarga.Split(',');
-                    // Asumiendo que el primer nombre es el primer elemento, segundo nombre el segundo, etc.
-                    BindingContext = new
-                    {
-                        PrimerNombre = data[0],
-                        SegundoNombre = "SegundoNombreEjemplo
+                
+                BindingContext = new
+                {
+                    PrimerNombre = data[0],
+                    SegundoNombre = data[0],
+                    PhoneNumber = data[0], 
+                    MontoRecarga = data[1] 
+                    };
+
+               
+                RecargaMessage.Text = $"Última recarga: {data[1]} dólares a {data[0]}";
+            }
+            else
+            {
+                RecargaMessage.Text = "No hay recargas anteriores registradas.";
+            }
+        }
+    }
+}
