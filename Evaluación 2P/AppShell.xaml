@@ -13,9 +13,9 @@
             <Tab Title="Historial" Icon="historial.png">
                 <ShellContent ContentTemplate="{DataTemplate local:HistorialPage}" />
             </Tab>
-            <Tab Title="Configuración" Icon="confi.png">
-                <ShellContent ContentTemplate="{DataTemplate local:ConfiguracionPage}" />
-            </Tab>
-        </TabBar>
+        <Tab Title="Layouts" Icon="confi.png">
+            <ShellContent ContentTemplate="{DataTemplate local:layouts}" />
+        </Tab>
+    </TabBar>
 
     </Shell>

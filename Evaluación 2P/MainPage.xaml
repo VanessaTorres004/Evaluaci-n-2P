@@ -36,20 +36,6 @@
 
             <Label x:Name="RecargaMessage" />
 
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto" />
-                    <RowDefinition Height="Auto" />
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
-
-                <Label Text="{Binding PrimerNombre}" Grid.Row="0" Grid.Column="0" />
-                <Label Text="{Binding SegundoNombre}" Grid.Row="0" Grid.Column="1" />
-                <Label Text="{Binding PrimerApellido}" Grid.Row="1" Grid.Column="0"/>
-                <Label Text="{Binding SegundoApellido}" Grid.Row="1" Grid.Column="1"/>
-            </Grid>
+   
         </StackLayout>
     </ContentPage>

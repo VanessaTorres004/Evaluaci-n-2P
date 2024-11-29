@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Evaluación_2P.layouts"
+             Title="layouts">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Label Text="{Binding PrimerNombre}" Grid.Row="0" Grid.Column="0" />
+        <Label Text="{Binding SegundoNombre}" Grid.Row="0" Grid.Column="1" />
+        <Label Text="{Binding PrimerApellido}" Grid.Row="1" Grid.Column="0"/>
+        <Label Text="{Binding SegundoApellido}" Grid.Row="1" Grid.Column="1"/>
+    </Grid>
+</ContentPage>
