@@ -8,7 +8,7 @@ namespace Evaluación_2P
             public MainPage()
             {
                 InitializeComponent();
-                LoadLastRecarga();
+                
             }
 
             private void OnMontoSelected(object sender, EventArgs e)
