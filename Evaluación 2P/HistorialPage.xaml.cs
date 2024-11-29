@@ -6,7 +6,7 @@ public partial class HistorialPage : ContentPage
 	{
 		InitializeComponent();
 	}
-}
+
 private void LoadHistorialRecargas()
     {
         var recargas = new List<Recarga>();
@@ -39,5 +39,4 @@ public class Recarga
 {
     public string PhoneNumber { get; set; }
     public string MontoRecarga { get; set; }
-}
 }

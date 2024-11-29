@@ -13,15 +13,17 @@
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
-        <BoxView Color="white" Grid.Row="0" Grid.Column="0" />
-        <BoxView Color="pink" Grid.Row="0" Grid.Column="1" />
-        <BoxView Color="White" Grid.Row="1" Grid.Column="0" />
-        <BoxView Color="Pink" Grid.Row="1" Grid.Column="0" />
-    </Grid>
+        
+        <BoxView Color="White" Grid.Row="0" Grid.Column="0" />
+        <BoxView Color="Pink" Grid.Row="0" Grid.Column="1" />
+        <BoxView Color="white" Grid.Row="0" Grid.Column="1" />
+        <BoxView Color="Pink" Grid.Row="0" Grid.Column="1" />
+        <Label color ="black" Text="{Binding PrimerNombre}" Grid.Row="0" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center" />
+        <Label color="black" Text="{Binding SegundoNombre}" Grid.Row="0" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center" />
+        <Label color="black" Text="{Binding PrimerApellido}" Grid.Row="1" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center" />
+        <Label color="black" Text="{Binding SegundoApellido}" Grid.Row="1" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center" />
 
-        <Label Text="{Binding PrimerNombre}" Grid.Row="0" Grid.Column="0" />
-        <Label Text="{Binding SegundoNombre}" Grid.Row="0" Grid.Column="1" />
-        <Label Text="{Binding PrimerApellido}" Grid.Row="1" Grid.Column="0"/>
-        <Label Text="{Binding SegundoApellido}" Grid.Row="1" Grid.Column="1"/>
-  
+        
+       
+    </Grid>
 </ContentPage>
