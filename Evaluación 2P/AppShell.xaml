@@ -10,9 +10,7 @@
             <Tab Title="Inicio" Icon="casa.png">
                 <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
             </Tab>
-            <Tab Title="Historial" Icon="historial.png">
-                <ShellContent ContentTemplate="{DataTemplate local:HistorialPage}" />
-            </Tab>
+       
         <Tab Title="Layouts" Icon="confi.png">
             <ShellContent ContentTemplate="{DataTemplate local:layouts}" />
         </Tab>
