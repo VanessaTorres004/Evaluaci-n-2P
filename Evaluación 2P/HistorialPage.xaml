@@ -3,9 +3,30 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Evaluación_2P.HistorialPage"
              Title="HistorialPage">
-    <StackLayout>
-        <Label Text="Historial de Recargas" 
-           VerticalOptions="CenterAndExpand" 
-           HorizontalOptions="CenterAndExpand" />
-    </StackLayout>
+
+    <StackLayout Padding="10">
+            <Label Text="Historial de Recargas" 
+               FontSize="24" 
+               HorizontalOptions="Center" 
+               VerticalOptions="Start" />
+
+            <ListView x:Name="RecargasListView">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Padding="10">
+                                <Label Text="{Binding PhoneNumber}" 
+                                   VerticalOptions="Center" 
+                                   HorizontalOptions="StartAndExpand" />
+                                <Label Text="{Binding MontoRecarga}" 
+                                   VerticalOptions="Center" 
+                                   HorizontalOptions="EndAndExpand" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    
+
 </ContentPage>
