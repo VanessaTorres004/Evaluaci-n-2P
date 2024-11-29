@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Evaluación_2P.MainPage"
              Title= "Recarga Telefonica">
+  
 
         <StackLayout Padding="10">
             <Label x:Name="Vtorres_label1" Text="Número Telefónico" />
@@ -47,8 +48,8 @@
 
                 <Label Text="{Binding PrimerNombre}" Grid.Row="0" Grid.Column="0" />
                 <Label Text="{Binding SegundoNombre}" Grid.Row="0" Grid.Column="1" />
-                <Label Text="{Binding PrimerApellido}" Grid.Row="1" Grid.Column="0" Style="{StaticResource ApellidoStyle}" />
-                <Label Text="{Binding SegundoApellido}" Grid.Row="1" Grid.Column="1" Style="{StaticResource ApellidoStyle}" />
+                <Label Text="{Binding PrimerApellido}" Grid.Row="1" Grid.Column="0"/>
+                <Label Text="{Binding SegundoApellido}" Grid.Row="1" Grid.Column="1"/>
             </Grid>
         </StackLayout>
     </ContentPage>
