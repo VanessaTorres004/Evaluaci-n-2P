@@ -5,8 +5,8 @@
              Title="Grid Layout Example">
     <ContentPage.Resources>
         <ResourceDictionary>
-         
-            <Color x:Key="GridBackgroundColor">#F0F0F0</Color>
+
+            <Color x:Key="GridBackgroundColor">pink</Color>
         </ResourceDictionary>
     </ContentPage.Resources>
 
@@ -19,14 +19,10 @@
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
-
-        <!-- Nombres -->
         <Label Text="{Binding Vanessa}" Grid.Row="0" Grid.Column="0" 
-               HorizontalOptions="Center" VerticalOptions="Center" FontSize="20" />
+               HorizontalOptions="Center" VerticalOptions="Center" FontSize="20" TextColor="Black"/>
         <Label Text="{Binding Nicole}" Grid.Row="0" Grid.Column="1" 
-               HorizontalOptions="Center" VerticalOptions="Center" FontSize="20" />
-
-        <!-- Apellidos con estilo -->
+               HorizontalOptions="Center" VerticalOptions="Center" FontSize="20" TextColor="Black" />
         <Label Text="{Binding Torres}" Grid.Row="1" Grid.Column="0" 
                Style="{StaticResource ApellidoStyle}" HorizontalOptions="Center" VerticalOptions="Center" FontSize="20" />
         <Label Text="{Binding Chacon}" Grid.Row="1" Grid.Column="1" 

@@ -426,7 +426,6 @@
     <Style x:Key="ApellidoStyle" TargetType="Label">
         <Setter Property="TextColor" Value="Blue" />
         <Setter Property="FontAttributes" Value="Bold" />
-        <Setter Property="BackgroundColor" Value="#E0E0FF" />
         <Setter Property="Padding" Value="10" />
     </Style>
     
