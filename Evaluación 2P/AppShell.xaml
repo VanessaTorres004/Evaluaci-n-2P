@@ -6,10 +6,16 @@
     xmlns:local="clr-namespace:Evaluación_2P"
     Shell.FlyoutBehavior="Disabled"
     Title="Evaluación_2P">
+    <TabBar>
+            <Tab Title="Inicio" Icon="icon_inicio.png">
+                <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
+            </Tab>
+            <Tab Title="Historial" Icon="icon_historial.png">
+                <ShellContent ContentTemplate="{DataTemplate local:HistorialPage}" />
+            </Tab>
+            <Tab Title="Configuración" Icon="icon_configuracion.png">
+                <ShellContent ContentTemplate="{DataTemplate local:ConfiguracionPage}" />
+            </Tab>
+        </TabBar>
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
-
-</Shell>
+    </Shell>

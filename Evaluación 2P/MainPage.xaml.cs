@@ -1,6 +1,4 @@
-﻿using System;
-using System.IO;
-using Microsoft.Maui.Controls;
+﻿
 namespace Evaluación_2P
 { 
         public partial class MainPage : ContentPage
